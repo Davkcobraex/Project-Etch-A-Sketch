@@ -1,16 +1,16 @@
-const newSize = 16;
-const grid = document.getElementById("container");
+const defaultSize = 16;
+const container = document.getElementById("container");
 
 function setupGrid(size) {
-        grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
-        grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`
         for (let i = 0; i < size * size; i++) {
-          const gridElement = document.createElement('div')
-          gridElement.classList.add('cells')
-          grid.appendChild(gridElement)
+          const cells = document.createElement('div')
+          cells.classList.add('cells')
+          container.appendChild(cells)
         }
 }
 
 window.onload = () => {
-    setupGrid(newSize)
+    setupGrid(defaultSize)
   }
