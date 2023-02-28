@@ -11,6 +11,4 @@ function setupGrid(size) {
         }
 }
 
-window.onload = () => {
-    setupGrid(defaultSize)
-  }
+setupGrid(defaultSize);

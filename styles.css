@@ -1,7 +1,25 @@
+body {
+    background-color: lightgray;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+}
+
 .cells {
     border: 1px solid black;
     padding: auto;
-    background-color: aquamarine;
+    background-color: white;
+}
+.content{
+    padding: 50px   ;
+    display: flex;
+    justify-content: center;
+    align-items : center;
 }
 #container{
     display: grid;
