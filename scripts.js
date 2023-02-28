@@ -29,9 +29,6 @@ function draw() {
 setupGrid(defaultSize);
 draw();
 
-
-
-
 function changeSize() {
     const input = prompt("Enter a number of grids cells on the sides: ");
     const elements = document.querySelectorAll(".cells");
